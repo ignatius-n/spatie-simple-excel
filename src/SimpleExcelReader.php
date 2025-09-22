@@ -187,7 +187,7 @@ class SimpleExcelReader
         return $this;
     }
 
-    public function getSheets(): array
+    public function getSheetNames(): array
     {
         $this->setReader();
 

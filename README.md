@@ -125,11 +125,11 @@ $rows = SimpleExcelReader::create($pathToXlsx)
     ->getRows();
 ```
 
-You can also retrieve all sheet names in a document using the `getSheets()` method.
+You can also retrieve all sheet names in a document using the `getSheetNames()` method.
 
 ```php
 $sheets = SimpleExcelReader::create($pathToXlsx)
-    ->getSheets();
+    ->getSheetNames();
 ```    
 
 

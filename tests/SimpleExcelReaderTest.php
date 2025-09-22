@@ -570,7 +570,7 @@ it('can get multiple sheet names', function () {
     $reader = SimpleExcelReader::create(getStubPath('multiple_sheets.xlsx'));
 
     expect(
-        $reader->getSheets()
+        $reader->getSheetNames()
     )->toEqual([
         0 => 'sheet1',
         1 => 'sheet2',
