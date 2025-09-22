@@ -566,7 +566,7 @@ it('can select the sheet of an excel file', function () {
     ]);
 });
 
-it('can get multipel sheet names', function () {
+it('can get multiple sheet names', function () {
     $reader = SimpleExcelReader::create(getStubPath('multiple_sheets.xlsx'));
 
     expect(
