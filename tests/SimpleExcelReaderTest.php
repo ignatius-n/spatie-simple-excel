@@ -566,6 +566,17 @@ it('can select the sheet of an excel file', function () {
     ]);
 });
 
+it('can get multiple sheet names', function () {
+    $reader = SimpleExcelReader::create(getStubPath('multiple_sheets.xlsx'));
+
+    expect(
+        $reader->getSheetNames()
+    )->toEqual([
+        0 => 'sheet1',
+        1 => 'sheet2',
+    ]);
+});
+
 it('will not open non-existing sheets', function () {
     SimpleExcelReader::create(getStubPath('multiple_sheets.xlsx'))
         ->fromSheet(3)
